@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Likes component with likes 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa ipDYfv"
+  >
+     2 👍 
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Likes component without likes 1`] = `<DocumentFragment />`;

@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders with tweets 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa pKMFB"
+  >
+    <div
+      class="sc-gzVnrw cjsdOt"
+    >
+      <a
+        href="https://www.github.com/"
+      >
+        <img
+          alt="Octocat"
+          src="foundingfather.png"
+        />
+      </a>
+    </div>
+    <div
+      class="sc-htoDjs glFZZT"
+    >
+      <a
+        href="https://twitter.com/"
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <g>
+            <path
+              d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div
+      class="sc-bZQynM iJNgEP"
+    >
+      <div
+        class="sc-bxivhb jtrJuU"
+      >
+        <div
+          class="sc-ifAKCX WOpjk"
+        >
+          <div
+            class="sc-htpNat gwmiLf"
+          >
+            <img
+              alt="josephus1"
+              src="http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+            />
+          </div>
+          <div>
+            <b>
+              @josephus1
+            </b>
+            <div
+              class="sc-EHOje xTGQR"
+            >
+              RT @chrismartenson: Today's #coronavirus #COVID2019  VIDEO update is out.
+I explore and discuss the days events and the explosive conclusio…
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bxivhb jtrJuU"
+      >
+        <div
+          class="sc-ifAKCX WOpjk"
+        >
+          <div
+            class="sc-htpNat gwmiLf"
+          >
+            <img
+              alt="Checkmate"
+              src="http://pbs.twimg.com/profile_images/1222673174329880576/6LLEIcbW_normal.jpg"
+            />
+          </div>
+          <div>
+            <b>
+              @Checkmate
+            </b>
+            <div
+              class="sc-EHOje xTGQR"
+            >
+              RT @BeThePlan: What if [they] are trying to kill off as many people as possible, anyhow [they] can, while [they] still can... what if it’s…
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bxivhb jtrJuU"
+      >
+        <div
+          class="sc-ifAKCX WOpjk"
+        >
+          <div
+            class="sc-htpNat gwmiLf"
+          >
+            <img
+              alt="Rich Dunsheath"
+              src="http://pbs.twimg.com/profile_images/386429619/Mean_Daddy_sm_normal.jpg"
+            />
+          </div>
+          <div>
+            <b>
+              @Rich Dunsheath
+            </b>
+            <div
+              class="sc-EHOje xTGQR"
+            >
+              RT @SecPompeo: The U.S. is deeply concerned about the vulnerability of the North Korean people to a #coronavirus outbreak. We strongly supp…
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component renders without tweets 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa pKMFB"
+  >
+    <div
+      class="sc-gzVnrw cjsdOt"
+    >
+      <a
+        href="https://www.github.com/"
+      >
+        <img
+          alt="Octocat"
+          src="foundingfather.png"
+        />
+      </a>
+    </div>
+    <div
+      class="sc-htoDjs glFZZT"
+    >
+      <a
+        href="https://twitter.com/"
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <g>
+            <path
+              d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div
+      class="sc-dnqmqq dpfhSX"
+    >
+      <div
+        class="MuiCircularProgress-root MuiCircularProgress-indeterminate"
+        role="progressbar"
+        style="width: 100px; height: 100px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20.2"
+            stroke-width="3.6"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
