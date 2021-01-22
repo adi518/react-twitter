@@ -12,6 +12,8 @@ import Tweets from './components/Tweets';
 import TwitterLogo from './components/TwitterLogo';
 import Loader, { SmallLoader } from './components/Loader';
 
+const SCROLL_SCALE = 1.667;
+
 function App({ initialState }) {
   const { state, setToken, setIsLoadingMore, setTweets } = useStore(
     initialState
@@ -33,10 +35,10 @@ function App({ initialState }) {
     })();
   });
 
-  const handleScroll = async e => {
-    const clientHeight = parseInt(e.target.clientHeight * 1.667);
+  const handleScroll = async event => {
+    const clientHeight = parseInt(event.target.clientHeight * SCROLL_SCALE);
     const scrollEnd =
-      e.target.scrollHeight - e.target.scrollTop <= clientHeight;
+      event.target.scrollHeight - event.target.scrollTop <= clientHeight;
     if (scrollEnd && state.nextResults && !state.isLoadingMore) {
       setIsLoadingMore(true);
       const {
