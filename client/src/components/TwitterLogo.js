@@ -11,12 +11,12 @@ const TwitterLogoSvg = () => (
 
 const StyledTwitterLogo = styled.div`
   top: 0;
-  right: 0;
+  left: 0;
   width: 2rem;
   opacity: 0.5;
   color: #ffffff;
   position: fixed;
-  margin-right: 2rem;
+  margin-left: 1rem;
   margin-top: 0.75rem;
   transition: opacity 0.5s;
 
