@@ -2,12 +2,13 @@ import React from 'react';
 import { useEffectOnce } from 'react-use';
 
 import { useStore } from './store';
-import StyledApp from './App.styled';
 import { parseQueryString } from './utils';
 import { getToken, getTweets } from './api';
+
+import StyledApp from './App.styled';
+import Logo from './components/Logo';
 import Tweet from './components/Tweet';
 import Tweets from './components/Tweets';
-import Logo from './components/Logo';
 import TwitterLogo from './components/TwitterLogo';
 import Loader, { SmallLoader } from './components/Loader';
 
