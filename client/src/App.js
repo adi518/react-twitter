@@ -3,10 +3,9 @@ import { useEffectOnce } from 'react-use';
 
 import { useStore } from './store';
 import { parseQueryString } from './utils';
-import { getToken, getTweets } from './api';
+import { getTweets, getTokenUtil, getTweetsUtil } from './api';
 
 import StyledApp from './App.styled';
-import Logo from './components/Logo';
 import Tweet from './components/Tweet';
 import Tweets from './components/Tweets';
 import TwitterLogo from './components/TwitterLogo';
@@ -21,35 +20,25 @@ function App({ initialState }) {
 
   useEffectOnce(() => {
     (async () => {
-      const {
-        data: { access_token: accessToken }
-      } = await getToken();
+      const accessToken = state.token || (await getTokenUtil());
       setToken(accessToken);
-      const {
-        data: {
-          statuses: tweets,
-          search_metadata: { next_results: nextResults }
-        }
-      } = await getTweets({ accessToken });
+      const response = await getTweets({ accessToken });
+      const { tweets, nextResults } = getTweetsUtil(response);
       setTweets({ tweets, nextResults });
     })();
   });
 
-  const handleScroll = async event => {
+  const handleScroll = async (event) => {
     const clientHeight = parseInt(event.target.clientHeight * SCROLL_SCALE);
     const scrollEnd =
       event.target.scrollHeight - event.target.scrollTop <= clientHeight;
     if (scrollEnd && state.nextResults && !state.isLoadingMore) {
       setIsLoadingMore(true);
-      const {
-        data: {
-          statuses: tweets,
-          search_metadata: { next_results: nextResults }
-        }
-      } = await getTweets({
+      const response = await getTweets({
         accessToken: state.token,
-        query: parseQueryString(state.nextResults)
+        query: parseQueryString(state.nextResults),
       });
+      const { tweets, nextResults } = getTweetsUtil(response);
       setIsLoadingMore(false);
       setTweets({ tweets, nextResults });
     }
@@ -57,16 +46,13 @@ function App({ initialState }) {
 
   return (
     <StyledApp onScroll={handleScroll}>
-      <Logo />
       <TwitterLogo />
       {state.isLoadingMore && <SmallLoader />}
       {state.tweets.length ? (
         <Tweets>
-          <React.Fragment>
-            {state.tweets.map(tweet => (
-              <Tweet {...tweet} key={tweet.id} />
-            ))}
-          </React.Fragment>
+          {state.tweets.map((tweet) => (
+            <Tweet {...tweet} key={tweet.id} />
+          ))}
         </Tweets>
       ) : (
         <Loader />

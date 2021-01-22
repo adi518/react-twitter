@@ -9,7 +9,7 @@ const StyledLoader = styled.div`
 
 const Loader = () => (
   <StyledLoader>
-    <CircularProgress size={100} color="inherit" />
+    <CircularProgress size={80} color="inherit" />
   </StyledLoader>
 );
 
@@ -23,7 +23,7 @@ const StyledSmallLoader = styled(StyledLoader)`
 
 export const SmallLoader = () => (
   <StyledSmallLoader>
-    <CircularProgress size={25} color="inherit" />
+    <CircularProgress size={40} color="inherit" />
   </StyledSmallLoader>
 );
 
